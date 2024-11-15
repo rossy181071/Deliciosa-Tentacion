@@ -6,24 +6,24 @@ export class NavbarComponent extends LitElement {
             pages: { type: Array }
         }
     }
-
+ 
     constructor() {
         super()
         this.pages = [
             {
-                url: 'homepage',
-                title: 'Home'
+                url: 'bienvenida',
+                title: 'Bienvenida'
             },
             {
-                url: 'bio',
+                url: 'malteadas',
                 title: 'Smoothies y Malteadas'
             },
             {
-                url: 'lit',
+                url: 'pasteles',
                 title: 'Pasteles'
             },
             {
-                url: 'react',
+                url: 'postres',
                 title: 'Postres'
             }
         ]
