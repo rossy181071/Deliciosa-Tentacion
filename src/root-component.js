@@ -2,13 +2,13 @@ import  { LitElement, html, css, nothing } from 'lit'
 
 import { NavbarComponent } from './navbar-component'
 
-import { HomepageComponent } from './homepage-component'
+import {BienvenidaComponent} from './bienvenida-component'
 
-import { BioComponent } from './bio-component'
+import { MalteadasComponent } from './malteadas-component'
 
-import { LitComponent } from './lit-component'
+import { PastelesComponent } from './pasteles-component'
 
-import { ReactComponent } from './react-component'
+import { PostresComponent } from './postres-component'
 
 export class RootComponent extends LitElement {
     static get properties () {
@@ -41,17 +41,17 @@ export class RootComponent extends LitElement {
            let pageTemplate = nothing
            
             switch (this.currentPage) {
-                case 'homepage':
-                    pageTemplate = html`<homepage-component></homepage-component>`
+                case 'bienvenida':
+                    pageTemplate = html`<bienvenida-component></bienvenida-component>`
                     break;
-                case 'bio':
-                    pageTemplate = html`<bio-component></bio-component>`
+                case 'malteadas':
+                    pageTemplate = html`<malteadas-component></malteadas-component>`
                     break;
-                case 'lit':
-                    pageTemplate = html`<lit-component></lit-component>`
+                case 'pasteles':
+                    pageTemplate = html`<pasteles-component></pasteles-component>`
                     break;
-                case 'react':
-                    pageTemplate = html`<react-component></react-component>`
+                case 'postres':
+                    pageTemplate = html`<postres-component></postres-component>`
 
             }
             
