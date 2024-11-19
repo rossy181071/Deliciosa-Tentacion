@@ -30,8 +30,8 @@ export class RootComponent extends LitElement {
 
     constructor() {
         super()
-        this.currentPage = "homepage"
-    }
+        this.currentPage = "bienvenida"
+    } 
     handlePageChange(e) {
         this.currentPage = e.detail
     }
@@ -52,6 +52,7 @@ export class RootComponent extends LitElement {
                     break;
                 case 'postres':
                     pageTemplate = html`<postres-component></postres-component>`
+                    break;
 
             }
             
